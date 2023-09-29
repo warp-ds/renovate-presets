@@ -1,0 +1,33 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "packageRules": [
+    {
+      "depTypeList": ["dependencies"],
+      "schedule": ["before 4am on the first day of the month"],
+      "updateTypes": ["major"]
+    },
+    {
+      "depTypeList": ["devDependencies"],
+      "updateTypes": ["major"]
+    },
+    {
+      "groupName": "All dependencies (non-major)",
+      "schedule": ["every weekend after 4am"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "matchUpdateTypes": ["patch", "minor"]
+    },
+    {
+      "groupName": "Semantic Release packages",
+      "schedule": ["before 4am on the first day of the month"],
+      "matchDepTypes": ["devDependencies"],
+      "matchPackagePatterns": ["^@semantic-release/", "semantic-release"]
+    }
+  ],
+  "baseBranches": ["next"],
+  "lockFileMaintenance": {
+    "automerge": false
+  }
+}
