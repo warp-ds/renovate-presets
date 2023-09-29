@@ -11,3 +11,9 @@ Dependencies are updated once a month.
 ## Dev dependencies
 
 Dev dependencies are updated once a week.
+
+## License
+
+@warp-ds/renovate-presets is [Apache-2.0 licensed](https://github.com/warp-ds/renovate-presets/blob/main/LICENSE).
+By contributing to @warp-ds/presets, you agree that your contributions will be licensed under its Apache-2.0 license.
+
