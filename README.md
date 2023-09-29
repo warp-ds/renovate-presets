@@ -6,11 +6,11 @@ The purpose of these presets is to be able to optimize the process of keeping de
 
 ## Dependencies
 
-Dependencies are updated once a month.
+Non-major dependencies are updated once a week. Major dependencies are updated once a month.
 
 ## Dev dependencies
 
-Dev dependencies are updated once a week.
+Non-major dev dependencies are updated once a week. Major dependencies every day.
 
 ## License
 
