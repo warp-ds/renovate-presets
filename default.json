@@ -8,7 +8,7 @@
       "groupName": "WARP dependencies",
       "matchDepTypes": ["dependencies", "devDependencies"],
       "matchUpdateTypes": ["patch", "minor", "major"],
-      "matchPackagePatterns": ["^@warp-ds/"]
+      "matchPackagePatterns": ["@warp-ds/"]
     },
     {
       "depTypeList": ["dependencies"],
