@@ -4,6 +4,12 @@
     "config:base"
   ],
   "packageRules": [
+     {
+      "groupName": "WARP dependencies",
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "matchUpdateTypes": ["patch", "minor", "major"],
+      "matchPackagePatterns": ["^@warp-ds/"]
+    },
     {
       "depTypeList": ["dependencies"],
       "schedule": ["before 4am on the first day of the month"],
@@ -11,6 +17,7 @@
     },
     {
       "depTypeList": ["devDependencies"],
+      "schedule": ["every weekend after 4am"],
       "updateTypes": ["major"]
     },
     {
