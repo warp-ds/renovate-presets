@@ -6,8 +6,7 @@
   "packageRules": [
      {
       "groupName": "WARP dependencies",
-      "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchUpdateTypes": ["patch", "minor", "major"],
+      "matchDepTypes": ["dependencies"],
       "matchPackagePatterns": ["^@warp-ds/"]
     },
     {
