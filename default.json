@@ -7,29 +7,34 @@
      {
       "groupName": "WARP dependencies",
       "matchDepTypes": ["dependencies"],
-      "matchPackagePatterns": ["^@warp-ds/"]
+      "matchPackagePatterns": ["^@warp-ds/"],
+      "rangeStrategy": "pin"
     },
     {
       "depTypeList": ["dependencies"],
       "schedule": ["before 4am on the first day of the month"],
-      "updateTypes": ["major"]
+      "updateTypes": ["major"],
+      "rangeStrategy": "pin"
     },
     {
       "depTypeList": ["devDependencies"],
       "schedule": ["every weekend after 4am"],
-      "updateTypes": ["major"]
+      "updateTypes": ["major"],
+      "rangeStrategy": "pin"
     },
     {
       "groupName": "All dependencies (non-major)",
       "schedule": ["every weekend after 4am"],
       "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchUpdateTypes": ["patch", "minor"]
+      "matchUpdateTypes": ["patch", "minor"],
+      "rangeStrategy": "pin"
     },
     {
       "groupName": "Semantic Release packages",
       "schedule": ["before 4am on the first day of the month"],
       "matchDepTypes": ["devDependencies"],
-      "matchPackagePatterns": ["^@semantic-release/", "semantic-release"]
+      "matchPackagePatterns": ["^@semantic-release/", "semantic-release"],
+      "rangeStrategy": "pin"
     }
   ],
   "baseBranches": ["next"],
